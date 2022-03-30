@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 - 20201688 김유민</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .box:nth-child(1) {
+            background-color: red;
+            left: 10px;
+            top: 10px;
+            z-index: 100; /** 제일 앞에 위치하도록 **/
+        }
+
+        .box:nth-child(2) {
+            background-color: green;
+            left: 50px;
+            top: 50px;
+            z-index: 10;
+        }
+
+        .box:nth-child(3) {
+            background-color: blue;
+            left: 90px;
+            top: 90px;
+            z-index: 1; /** 제일 아래에 위치 **/
+        }
+        body > div  
+        {
+            width:400px; height:100px;  /** 자손의 position 속성에 absolute 적용하기 위해 height 추가 **/
+            border: 3px solid black;
+            position: relative;         /** relative 추가 **/
+            /* overflow: hidden;            */
+            overflow-y: scroll;       /** 넘치는 부분 스크롤 : 세로만 **/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+</body>
+</html>
