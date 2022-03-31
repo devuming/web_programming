@@ -2,8 +2,46 @@
 <html>
     <head>
         <title>6장 11번 연습 문제 - 20201688 김유민</title>
+        <style>
+            body {
+                background-color: gray;
+                font-weight: bold;          /** 글자 두껍게 **/
+                font-family: "나눔스퀘어라운드", sans-serif;
+            }
+    
+            input 
+            {
+                border: 1px solid white;
+                border-radius: 10px;
+            }
+            input[type=submit]
+            {
+                width: 100%;
+                font-family: "나눔스퀘어라운드", sans-serif;
+                font-weight: bold;          /** 글자 두껍게 **/
+            }
+            .txt
+            {
+                text-align: center;     /** 중앙 정렬 **/
+            }
+        </style>
     </head>
+    
     <body>
-
+        <table>
+            <h1>간단한 입력양식</h1>
+            <tr>
+                <td class="txt">아이디</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="txt">비밀번호</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"></td>
+            </tr>
+        </table>    
     </body>
 </html>
