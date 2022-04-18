@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Basic Page</title>
+    </head>
+    <style>
+        * { margin: 0; padding: 0;}
+        body{ 
+            background-color: lightgray;
+        }
+    </style>
+    <style>
+        #title{
+            padding : 30px;
+        }
+        #page_wrapper{
+            width:960px; 
+            margin:30px auto;
+            background-color: white;
+            box-shadow: -5px 5px 15px gray;
+            padding: 10px;
+        }
+        /* 메뉴 */
+        #bar{
+            overflow: hidden;
+        }
+        #main_menu{
+            list-style: none;
+        }
+        #main_menu > li{
+            float: left;
+            margin: 10px;
+        }
+        #main_menu > li > a{
+            color: black;
+            text-decoration: none;
+        }
+
+        /* 검색 */
+        .search
+        {
+            height: 26px;
+            padding: 7px;
+            float:right;
+        }
+        #search_text{
+            display: block;
+            border-radius: 10px 0px 0px 10px;
+            border: solid 1px lightgray;
+            height:24px;
+            float: left;
+        }
+        #search_button{
+            border-radius: 0px 10px 10px 0px;
+            border: solid 1px lightgray;
+            margin-left:-1px;
+            height:26px;
+            vertical-align: top;
+            display: block;
+            float: left;
+            display: inline-block;
+        }
+
+        /* 콘텐츠 영역*/
+        #contents_area
+        {
+            overflow: hidden;
+        }
+        #main_section{
+            float: left;
+            width: 740px;
+        }
+        #main_aside{
+            float:right;
+            width: 200px;
+        }
+        #main_aside > ul{
+            list-style:none;
+            padding-left: 10px;
+        }
+        .article_header
+        {
+            padding: 10px;
+        }
+        .content
+        {
+            padding: 10px;
+        }
+    </style>
+    <body>
+        <div id="page_wrapper">
+            <header id="title">
+                <h2>HTML5 Example Preview</h2>
+                한빛아카데미
+            </header>
+            <nav id="bar">
+                <hr>
+                <ul id="main_menu">
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#">CSS3</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+                
+                <div id="search">
+                    <input id="search_text" type="text"/>
+                    <input id="search_button" type="button" value="검색"/>
+                </div>
+            </nav>
+            <hr>
+            <div id="contents_area">
+                <section id="main_section">
+                    <article class="article">
+                        <div class="article_header">
+                            <h1 class="article_title">HTML5 개요와 응용</h1>
+                            <span>2019년 02월 14일</span>
+                        </div>
+                        <div class="content">
+                            <img src="http://placekitten.com/430/280">
+                                
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Ipsam debitis optio, veritatis dolore corporis porro eligendi animi id veniam explicabo
+                                aperiam impedit nostrum cumque similique. Natus, perspiciatis nobis. Voluptatibus, iusto.
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Ipsam debitis optio, veritatis dolore corporis porro eligendi animi id veniam explicabo
+                                aperiam impedit nostrum cumque similique. Natus, perspiciatis nobis. Voluptatibus, iusto.
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Ipsam debitis optio, veritatis dolore corporis porro eligendi animi id veniam explicabo
+                                aperiam impedit nostrum cumque similique. Natus, perspiciatis nobis. Voluptatibus, iusto.
+                                Ipsam debitis optio, veritatis dolore corporis porro eligendi animi id veniam explicabo
+                                aperiam impedit nostrum cumque similique. Natus, perspiciatis nobis. Voluptatibus, iusto.</p>
+                        </div>
+                        <hr>
+                    </article>
+                    <article class="article">
+                        <div class="article_header">
+                            <h1 class="article_title">HTML5 개요와 응용</h1>
+                            <span>2019년 02월 14일</span>
+                        </div>
+                        <div class="content">
+                            <img src="http://placekitten.com/430/280">
+                                
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Ipsam debitis optio, veritatis dolore corporis porro eligendi animi id veniam explicabo
+                                aperiam impedit nostrum cumque similique. Natus, perspiciatis nobis. Voluptatibus, iusto.
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Ipsam debitis optio, veritatis dolore corporis porro eligendi animi id veniam explicabo
+                                aperiam impedit nostrum cumque similique. Natus, perspiciatis nobis. Voluptatibus, iusto.
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Ipsam debitis optio, veritatis dolore corporis porro eligendi animi id veniam explicabo
+                                aperiam impedit nostrum cumque similique. Natus, perspiciatis nobis. Voluptatibus, iusto.
+                                Ipsam debitis optio, veritatis dolore corporis porro eligendi animi id veniam explicabo
+                                aperiam impedit nostrum cumque similique. Natus, perspiciatis nobis. Voluptatibus, iusto.</p>
+                        </div>
+                        <hr>
+                    </article>
+                </section>
+                <aside id="main_aside">
+                    <b>카테고리</b>
+                    <ul>
+                        <li>데이터</li>
+                        <li>데이터</li>
+                        <li>데이터</li>
+                        <li>데이터</li>
+                        <li>데이터</li>
+                    </ul>
+                    <br>
+                    <b>최근 글</b>
+                    <ul>
+                        <li>데이터</li>
+                        <li>데이터</li>
+                        <li>데이터</li>
+                        <li>데이터</li>
+                        <li>데이터</li>
+                    </ul>
+                </aside>
+                </div>
+            <footer id="main_footer">
+                <a href="#">ITCookBook HTML5 Programming</a>
+            </footer>
+        </div>
+    </body>
+</html>
