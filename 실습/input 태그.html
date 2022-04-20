@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="next.html" method="get">
+            <fieldset>
+                <legend>크크</legend>
+                <select multiple="multiple">
+                    <optgroup label="냠냠">
+                        <option>김밥</option>            
+                        <option>떡볶이</option>   
+                    </optgroup>        
+                    <optgroup label="크크"> 
+                        <option>순대</option>
+                        <option>어묵</option>
+                    </optgroup>
+                </select>
+                <select>
+                    <optgroup label="냠냠">
+                        <option>김밥</option>            
+                        <option>떡볶이</option>   
+                    </optgroup>        
+                    <optgroup label="크크"> 
+                        <option>순대</option>
+                        <option>어묵</option>
+                    </optgroup>
+                </select>
+                <div class="content">
+                    <input type="radio" name="gender" value="w"  id="woman">
+                    <label for="woman">여자</label>
+                    <input type="radio" name="gender" value="m" id="man">
+                    <label for="man">남자</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" value="치킨" name="food" id="c">
+                    <label for="c">치킨</label>
+                    <input type="checkbox" value="피자" name="food" id="p">
+                    <label for="p">피자</label>
+                    <input type="checkbox" value="햄버거" name="food" id="h">
+                    <label for="h">햄버거</label>
+                    <input type="file" name="file">
+                    <!-- <input type="image" src="http://placehold.it/100x100"> -->
+                </div>
+                <table border="1">
+                    <tr>
+                        <td>
+                            <label for="id">ID</label>
+                        </td>
+                        <td colspan="2">
+                            <input id="id" type="text" name="userid">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pw">PW</label>
+                        </td>
+                        <td colspan="2">
+                            <input id="pw" type="password" name="userpw">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="하이" name="btn">
+                        </td>
+                        <td>
+                            <input type="submit" value="확인">
+                        </td>
+                        <td>
+                            <input type="reset" value="리셋">
+                        </td>
+                    </tr>
+                </table>
+                <textarea rows="5" cols="5"></textarea>
+            </fieldset>
+            </form>
+    </body>
+</html>
